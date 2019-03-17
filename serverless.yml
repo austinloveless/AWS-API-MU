@@ -1,0 +1,81 @@
+# NOTE: update this with your service name
+service: todo-app-api
+
+# Use the serverless-webpack plugin to transpile ES6
+plugins:
+  - serverless-webpack
+  - serverless-offline
+
+# serverless-webpack configuration
+# Enable auto-packing of external modules
+custom:
+  webpack:
+    webpackConfig: ./webpack.config.js
+    includeModules: true
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+  stage: dev
+  region: us-east-1
+  # To load environment variables externally
+  # rename env.example to env.yml and uncomment
+  # the following line. Also, make sure to not
+  # commit your env.yml.
+  #
+  # environment: ${file(env.yml):${self:provider.stage}}
+  iamRoleStatements:
+    - Effect: Allow
+      Action:
+        - dynamodb:DescribeTable
+        - dynamodb:Query
+        - dynamodb:Scan
+        - dynamodb:GetItem
+        - dynamodb:PutItem
+        - dynamodb:UpdateItem
+        - dynamodb:DeleteItem
+      Resource: "arn:aws:dynamodb:us-east-1:*:*"
+
+functions:
+  createTodo:
+    handler: handler.createTodo
+    events:
+      - http:
+          path: todos
+          method: post
+          cors: true
+  getTodo:
+      handler: handler.getTodo
+      events:
+        - http:
+            path: todos/{id}
+            method: get
+            cors: true
+
+  getAllTodos:
+    handler: handler.getAllTodos
+    events:
+      - http:
+          path: todos
+          method: get
+          cors: true
+
+  deleteTodo:
+    handler: handler.deleteTodo
+    events:
+      - http:
+          path: todos/{id}
+          method: delete
+          cors: true
+
+  updateTodo:
+    handler: handler.updateTodo
+    events:
+      - http:
+          path: todos/{id}
+          method: put
+          cors: true
+# Create our resources with separate CloudFormation templates
+resources:
+  # API Gateway Errors
+  - ${file(resources/api-gateway-errors.yml)}
