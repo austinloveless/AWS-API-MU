@@ -12,8 +12,8 @@ Stay in touch on [**Slack**](slack link)
 
 # Table of contents
 
-- [Who is this for?](https://github.com/austinloveless/AWS-API-MU/tree/ES5#Who-is-this-for?)
-- [What does this cover?](https://github.com/austinloveless/AWS-API-MU/tree/ES5#What-does-this-cover?)
+- [Who is this for?](https://github.com/austinloveless/AWS-API-MU/tree/ES5#Who-is-this-for)
+- [What does this cover?](https://github.com/austinloveless/AWS-API-MU/tree/ES5#What-does-this-cover)
 - [Requirements](https://github.com/austinloveless/AWS-API-MU/tree/ES5#Requirements)
 - [Technologies and Services](https://github.com/austinloveless/AWS-API-MU/tree/ES5#Technologies-and-Services)
 - [How to get help? **Slack**](https://github.com/austinloveless/AWS-API-MU/tree/ES5#How-to-get-help)
@@ -127,7 +127,7 @@ We are going to be using [AWS Lambda](https://aws.amazon.com/lambda/) and [Amazo
 
 The Serverless Framework will enable us to deploy backend applications as independent functions that will be deployed to AWS Lambda. It also configures AWS Lambda to run code in response to HTTP requests using Amazon API Gateway.
 
-### Install Serverless Framework
+### Install the Serverless Framework
 
 Run the following to globally install Serverless.
 `npm install serverless -g`
