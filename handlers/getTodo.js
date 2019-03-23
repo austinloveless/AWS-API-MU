@@ -1,7 +1,7 @@
 import * as dynamoDbLib from "../libs/dynamodb";
 import { successResponse, failureResponse } from "../libs/responses";
 
-const getTodo = async (event, context, callback) => {
+const getTodo = async (event, context) => {
   const params = {
     TableName: "todos",
     Key: {

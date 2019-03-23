@@ -4,6 +4,8 @@ Powered by the [Serverless Framework](https://serverless.com/). The most widely 
 
 ### Why go Serverless
 
+ADD WIFI
+
 Low **maintenance** required, you deal with your own application code and nothing else.
 It’s **cheaper** to run serverless applications because you are effectively only paying per request. So when your application is not being used, you are not being charged for it. See more [HERE](https://aws.amazon.com/pricing/)
 Finally, the ease of **scaling** is thanks in part to DynamoDB which gives us near infinite scale and Lambda that simply scales up to meet the demand.

@@ -1,7 +1,7 @@
 import * as dynamoDbLib from "../libs/dynamodb";
 import { successResponse, failureResponse } from "../libs/responses";
 
-const updateTodo = async (event, context, callback) => {
+const updateTodo = async (event, context) => {
   const data = JSON.parse(event.body);
   const params = {
     TableName: "todos",

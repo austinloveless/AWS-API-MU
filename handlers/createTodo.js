@@ -2,7 +2,7 @@ import uuid from "uuid";
 import * as dynamoDbLib from "../libs/dynamodb";
 import { successResponse, failureResponse } from "../libs/responses";
 
-const createTodo = async (event, context, callback) => {
+const createTodo = async (event, context) => {
   const data = JSON.parse(event.body);
   const params = {
     TableName: "todos",
