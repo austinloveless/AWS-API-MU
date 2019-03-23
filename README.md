@@ -12,7 +12,7 @@ Stay in touch on [**Slack**](slack link)
 
 # Table of contents
 
-- [Who is this for?](https://github.com/austinloveless/AWS-API-MU/tree/master#Who-is-this-for)
+- [Who is this for?](#Who-is-this-for)
 - [What does this cover?](https://github.com/austinloveless/AWS-API-MU/tree/master#What-does-this-cover)
 - [Requirements](https://github.com/austinloveless/AWS-API-MU/tree/master#Requirements)
 - [Technologies and Services](https://github.com/austinloveless/AWS-API-MU/tree/master#Technologies-and-Services)
