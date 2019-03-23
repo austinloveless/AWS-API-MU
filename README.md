@@ -12,28 +12,28 @@ Stay in touch on [**Slack**](slack link)
 
 # Table of contents
 
-- [Who is this for?](#Who-is-this-for?)
-- [What does this cover?](#What-does-this-cover?)
-- [Requirements](#Requirements)
-- [Technologies and Services](#Technologies-and-Services)
-- [How to get help? **Slack**](#How-to-get-help)
-- [AWS Account Creation](#AWS-Account-Creation)
-- [Getting Setup with AWS Services](#Getting-Setup-with-AWS-Services)
-  - [Create an IAM User](###Create-an-IAM-User)
-  - [Install the AWS CLI](###Install-the-AWS-CLI)
-  - [Add Access Key to AWS CLI](###Add-Access-Key-to-AWS-CLI)
-  - [Create a DynamoDB Table](###Create-A-DynamoDB-Table)
-- [Building the API](#Building-the-API)
-  - [Install the Serverless Framework](###Install-the-Serverless-Framework)
-  - [Walk Through the Project](###Walk-Through-the-Project)
-    - [Running the API Locally](###Running-the-API-Locally)
-    - [Deploying the API](###Deploying-the-API)
-- [Building-From-Scratch](#Building-From-Scratch)
-- [Extra Resources](#Extra-Resources)
+- [Who is this for?](#https://github.com/austinloveless/AWS-API-MU/tree/ES5#Who-is-this-for?)
+- [What does this cover?](#https://github.com/austinloveless/AWS-API-MU/tree/ES5#What-does-this-cover?)
+- [Requirements](#https://github.com/austinloveless/AWS-API-MU/tree/ES5#Requirements)
+- [Technologies and Services](#https://github.com/austinloveless/AWS-API-MU/tree/ES5#Technologies-and-Services)
+- [How to get help? **Slack**](#https://github.com/austinloveless/AWS-API-MU/tree/ES5#How-to-get-help)
+- [AWS Account Creation](#https://github.com/austinloveless/AWS-API-MU/tree/ES5#AWS-Account-Creation)
+- [Getting Setup with AWS Services](#https://github.com/austinloveless/AWS-API-MU/tree/ES5#Getting-Setup-with-AWS-Services)
+  - [Create an IAM User](#https://github.com/austinloveless/AWS-API-MU/tree/ES5#Create-an-IAM-User)
+  - [Install the AWS CLI](#https://github.com/austinloveless/AWS-API-MU/tree/ES5#Install-the-AWS-CLI)
+  - [Add Access Key to AWS CLI](#https://github.com/austinloveless/AWS-API-MU/tree/ES5#Add-Access-Key-to-AWS-CLI)
+  - [Create a DynamoDB Table](#https://github.com/austinloveless/AWS-API-MU/tree/ES5#Create-A-DynamoDB-Table)
+- [Building the API](#https://github.com/austinloveless/AWS-API-MU/tree/ES5#Building-the-API)
+  - [Install the Serverless Framework](#https://github.com/austinloveless/AWS-API-MU/tree/ES5#Install-the-Serverless-Framework)
+  - [Walk Through the Project](#https://github.com/austinloveless/AWS-API-MU/tree/ES5#Walk-Through-the-Project)
+    - [Running the API Locally](#https://github.com/austinloveless/AWS-API-MU/tree/ES5#Running-the-API-Locally)
+    - [Deploying the API](#https://github.com/austinloveless/AWS-API-MU/tree/ES5#Deploying-the-API)
+- [Building-From-Scratch](#https://github.com/austinloveless/AWS-API-MU/tree/ES5#Building-From-Scratch)
+- [Extra Resources](#https://github.com/austinloveless/AWS-API-MU/tree/ES5#Extra-Resources)
 
 # Who is this for?
 
-This is meant for developers that would like to build serverless applications. Or for people who are looking to get more into infrastructure and the business side of cloud computing. It's meant to serve as a resource for learning about how to build and deploy serverless applications. Also this is catered solely towards JavaScript developers for now.
+This is meant for developers that would like to build serverless applications. Or for people who are looking to get more into infrastructor and the business side of cloud computing. It's meant to serve as a resource for learning about how to build and deploy serverless applications. Also this is catered solely towards JavaScript developers for now.
 
 Let’s start by looking at what we’ll be covering.
 
@@ -44,11 +44,11 @@ Add image of the API
 
 ### Basic CRUD Capability
 
-- The ability to Create Todos
+- The ablility to Create Todos
 - The ability to Get a list of all Todos.
 - The ability to Get a Todo based on an id.
 - The ability to Update a Todo based on an id.
-- the ability to Delete a Todo based on an id.
+- The ability to Delete a Todo based on an id.
 
 This is a Serverless API for a Todo List written completely in JavaScript. It is a relatively simple application but I am going to address the following requirements.
 
@@ -67,7 +67,7 @@ We’ll be using the following set of technologies and services to build our Ser
 
 # How to get help?
 
-Join the Meet up slack workspace and post your question in the AWS-Help channel. [**Slack**](slack link)
+Join the Meetup slack workspace adn post your question in the AWS-Help channel. [**Slack**](slack link)
 
 # AWS Account Creation
 
@@ -134,7 +134,7 @@ Run the following to globally install Serverless.
 
 ### Walk Through the Project
 
-**I already have the API built in this Repository so lets clone this repo and walk through it.**
+**I already have the API built in this Respository so lets clone this repo and walk through it.**
 
 - Clone this repository on your local machine.
 - Go into the directory that you just cloned.
@@ -154,7 +154,7 @@ If you are a beginner I would look at the `ES5` branch.
 - Run the command `npm install` to install the NodeJS packages
 - Now In your project you should see a `Handlers` folder and a `Mocks` folder.
 - The Handlers folder is where your functions are for the API.
-- To **Test** the functions run the command `serverless invoke local --function <function name ex: createTodo> --path mocks/<mock name ex: createTodo-event.json>`
+- To **Test** the functions run the command `serverless invoke local --function <function name ex: createTodo> --path mocks/<mock name ex: creatTodo-event.json>`
 - This will run your function and pass in the json object to test the function.
 - If functions pass you should get a `200 success code` with the response and if it fails you should get a `500 error code`.
 - To test this locally with API Gateway check out [Serverless Offline](https://github.com/dherault/serverless-offline).
