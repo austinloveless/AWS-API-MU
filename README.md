@@ -25,7 +25,7 @@ Stay in touch on [**Slack**](https://join.slack.com/t/aws-meetup-group/shared_in
   - [Add Access Key to AWS CLI](#add-access-key-to-aws-cli)
   - [Create a DynamoDB Table](#create-a-dynamodb-table)
 - [Building the API](#building-the-api)
-  - [Install the Serverless Framework](#install-the-serverless-framework)
+  - [Install the Serverless Framework](#install-serverless-framework)
   - [Walk Through the Project](#walk-through-the-project)
     - [Running the API Locally](#running-the-api-locally)
     - [Deploying the API](#deploying-the-api)
