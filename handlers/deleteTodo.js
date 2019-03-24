@@ -4,6 +4,8 @@ import { successResponse, failureResponse } from "../libs/responses";
 const deleteTodo = async (event, context) => {
   const params = {
     TableName: "todos",
+    // Key defines the partition key and sort key of the item to be removed
+    // - todoId: path parameter
     Key: {
       todoId: event.pathParameters.id
     }

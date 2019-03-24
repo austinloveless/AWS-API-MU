@@ -37,6 +37,11 @@ provider:
       Resource: "arn:aws:dynamodb:us-east-1:*:*"
 
 functions:
+  # Defines an HTTP API endpoint that calls the createTodo function in createTodo.js
+  # - path: url path is /todos
+  # - method: POST request
+  # - cors: enabled CORS for browser cross domain api call
+  # - authorizer: authenticate using the AWS IAM role
   createTodo:
     handler: handler.createTodo
     events:
@@ -47,6 +52,8 @@ functions:
           authorizer: aws_iam
 
   getTodo:
+    # - path: url path is /todos/{id}
+    # - method: GET request
       handler: handler.getTodo
       events:
         - http:
@@ -56,6 +63,8 @@ functions:
             authorizer: aws_iam
 
   getAllTodos:
+    # - path: url path is /todos
+    # - method: GET request
     handler: handler.getAllTodos
     events:
       - http:
@@ -65,6 +74,8 @@ functions:
           authorizer: aws_iam
 
   deleteTodo:
+    # - path: url path is /todos/{id}
+    # - method: DELETE request
     handler: handler.deleteTodo
     events:
       - http:
@@ -74,6 +85,8 @@ functions:
           authorizer: aws_iam
 
   updateTodo:
+    # - path: url path is /todos/{id}
+    # - method: PUT request
     handler: handler.updateTodo
     events:
       - http:

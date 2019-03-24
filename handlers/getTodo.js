@@ -3,6 +3,8 @@ import { successResponse, failureResponse } from "../libs/responses";
 
 const getTodo = async (event, context) => {
   const params = {
+    // Key defines the partition key and sort key of the item to be retrieved
+    // - todoId: path parameter
     TableName: "todos",
     Key: {
       todoId: event.pathParameters.id
