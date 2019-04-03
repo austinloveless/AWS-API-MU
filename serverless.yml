@@ -49,7 +49,6 @@ functions:
           path: todos
           method: post
           cors: true
-          authorizer: aws_iam
 
   getTodo:
     # - path: url path is /todos/{id}
@@ -60,8 +59,6 @@ functions:
             path: todos/{id}
             method: get
             cors: true
-            authorizer: aws_iam
-
 
   getAllTodos:
     # - path: url path is /todos
@@ -72,7 +69,6 @@ functions:
           path: todos
           method: get
           cors: true
-          authorizer: aws_iam
 
   deleteTodo:
     # - path: url path is /todos/{id}
@@ -83,7 +79,6 @@ functions:
           path: todos/{id}
           method: delete
           cors: true
-          authorizer: aws_iam
 
   updateTodo:
     # - path: url path is /todos/{id}
@@ -94,7 +89,6 @@ functions:
           path: todos/{id}
           method: put
           cors: true
-          authorizer: aws_iam
 
 # Create our resources with separate CloudFormation templates
 resources:
