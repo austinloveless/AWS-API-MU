@@ -29,9 +29,11 @@ Stay in touch on [**Slack**](https://join.slack.com/t/aws-meetup-group/shared_in
   - [Walk Through the Project](#walk-through-the-project)
     - [Running the API Locally](#running-the-api-locally)
     - [Deploying the API](#deploying-the-api)
+- [FrontEnd Repo](https://github.com/austinloveless/aws-todo-client)
 - [Building-From-Scratch](#building-from-scratch)
 - [Extra Resources](#extra-resources)
 - [Survey](https://goo.gl/forms/Z7Oas47v4kNHv4fy2)
+- [Slides](https://docs.google.com/presentation/d/1xDhTM_H13d1nsyYmbI6NKyPfYRr_1Kfje0SjWlFVIUY/edit?usp=sharing)
 
 # Who is this for?
 
@@ -194,3 +196,5 @@ If you are a beginner I would look at the `ES5` branch.
   They have some of the best resources for getting a certification.
 - If you are confused about a topic the [Docs](https://docs.aws.amazon.com/) can be a good place to find information.
 - I would also highly recommend using the [AWS FAQs](https://aws.amazon.com/faqs/) for a quick answer to questions you may have.
+
+# aws-todo-client
