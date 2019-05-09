@@ -162,7 +162,7 @@ If you are a beginner I would look at the `ES5` branch.
 - Run the command `npm install` to install the NodeJS packages
 - Now In your project you should see a `Handlers` folder and a `Mocks` folder.
 - The Handlers folder is where your functions are for the API.
-- To **Test** the functions run the command `serverless invoke local --function <function name ex: createTodo> --path mocks/<mock name ex: creatTodo-event.json>`
+- To **Test** the functions run the command `serverless invoke local --function <function name ex: createTodo> --path mocks/<mock name ex: createTodo-event.json>`
 - This will run your function and pass in the json object to test the function.
 - If functions pass you should get a `200 success code` with the response and if it fails you should get a `500 error code`.
 - To test this locally with API Gateway check out [Serverless Offline](https://github.com/dherault/serverless-offline).
